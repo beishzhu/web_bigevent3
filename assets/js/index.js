@@ -30,9 +30,9 @@ function getuserInfo() {
 
 // 渲染用户头像和名称
 function renderAvatar(data) {
-    // 渲染左侧用户昵称
+    // 渲染左侧用户昵称nickname
     var name = data.nickname || data.username
-    $('.welcome').html('欢迎&nbsp;&nbsp;' + name)
+    $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
         // 渲染用户头像
         // 1. 如果有头像就渲染头像图片
     if (data.user_pic !== null) {
